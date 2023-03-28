@@ -1,24 +1,28 @@
 import React from "react";
 import Card from "../Card/Card";
+import {cardData as products} from "../../data/cardsData"
 
 const CardContent = () => {
-    const cardStyle : React.CSSProperties={
+    const cardStyle: React.CSSProperties = {
         top: '10px',
-        bottom : '10px',
-        display : 'flex',
-        flexDirection : 'row',
+        bottom: '10px',
+        display: 'flex',
+        flexDirection: 'row',
         padding: '1rem',
-        margin : '5rem'
+        margin: '5rem',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
-    const Cards = [<Card/>,<Card/>,<Card/>]
-    const clientsNames = ["Mr. X", "Mr. Y" ,"Mr. W"]
-    return(<div style={cardStyle}>
-        {Cards.map((card,index) => (
-            <div key={index}>
-                <Card/>
-            </div>
-        ))}
-    </div>);
+
+    return (
+        <div style={cardStyle}>
+            {products.map((card, index) => (
+                <div key={index}>
+                    <Card cardData={card} bgColor={"black"}/>
+                </div>
+            ))}
+        </div>
+    );
 }
 
 //export {Card}

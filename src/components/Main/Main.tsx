@@ -5,7 +5,6 @@ const Main = () => {
     const cardStyle : React.CSSProperties={
         top: '10px',
         bottom : '10px',
-        backgroundColor:'blue',
         display : 'flex',
         flexDirection : 'row',
         justifyContent : 'center'
