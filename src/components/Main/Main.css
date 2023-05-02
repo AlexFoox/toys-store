@@ -1,0 +1,12 @@
+.mainBlock {
+    color: yellow;
+    display: list-item;
+    text-align: center;
+    flexDirection : row;
+    justifyContent : center;
+    padding-top: 10%;
+}
+
+.mainBlockText {
+    color: yellow;
+}

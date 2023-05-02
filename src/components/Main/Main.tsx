@@ -1,18 +1,16 @@
 import React from "react";
-import CardContent from "../CardContent/CardContent";
-
+import './Main.css'
 const Main = () => {
-    const cardStyle : React.CSSProperties={
-        top: '10px',
-        bottom : '10px',
-        display : 'flex',
-        flexDirection : 'row',
-        justifyContent : 'center'
-    }
-    return(<div style={cardStyle}>
-        <CardContent/>
-    </div>);
+    return (
+        <div className={"mainBlock"}>
+            <img src="/fooxLogo.jpg" style={{ width: "50%" }} />
+            <div >
+                <h2>REACT JS Project</h2>
+                <p>CARDS SHOP</p>
+            </div>
+        </div>
+    );
+
 }
 
-//export {Card}
 export default Main

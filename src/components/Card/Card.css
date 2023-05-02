@@ -29,15 +29,37 @@
 }
 
 .cardStyle {
-    width:300px;
-    height:200px;
-    background:green;
-    border : solid black 1px;
-    margin : 10px;
+    width: 250px;
+    background-color: green;
+    border: solid black 1px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.cardStyle > * {
+    margin: 10px 0;
+}
+
+
 .cardBottomStyle {
-    width:300px;
-    background:blue;
-    border : solid black 1px;
+    width: 200px;
+    background: blue;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardBottomStyle > * {
+    margin: 10px 0;
+}
+
+.cardButtons {
+    display: flex;
 }

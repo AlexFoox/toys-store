@@ -1,0 +1,19 @@
+.cardContentRowStyle{
+    top: 10px;
+    bottom: 10px;
+    flexDirection: row;
+    padding: 1rem;
+    margin: 5rem;
+    alignItems: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartContentRowStyle{
+    top: 10px;
+    bottom: 10px;
+    padding: 1rem;
+    margin-bottom: 0rem;
+     flex-wrap: wrap;
+    justify-content: space-between;
+}

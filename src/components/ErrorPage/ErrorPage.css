@@ -1,0 +1,14 @@
+.textStyle {
+    outline: blueviolet;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.imgStyle{
+    height: 30%;
+    width: 30%;
+}

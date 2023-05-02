@@ -1,0 +1,6 @@
+.fullName{
+    fontSize: '24px';
+    fontWeight: 'bold';
+    textTransform: 'caitalize';
+    color: #007bff;
+}

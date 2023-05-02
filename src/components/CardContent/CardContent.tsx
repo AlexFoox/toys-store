@@ -1,26 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "../Card/Card";
 import {cardData as products} from "../../data/cardsData"
+import './CardContent.css'
+import CartContent from "../CartContent/CartContent";
 
 const CardContent = () => {
-    const cardStyle: React.CSSProperties = {
-        top: '10px',
-        bottom: '10px',
-        display: 'flex',
-        flexDirection: 'row',
-        padding: '1rem',
-        margin: '5rem',
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
-
+    const [bgColor, setBgColor] = useState("red");
     return (
-        <div style={cardStyle}>
-            {products.map((card, index) => (
-                <div key={index}>
-                    <Card cardData={card} bgColor={"black"}/>
-                </div>
-            ))}
+        <div>
+            <div className={"cardContentRowStyle"}>
+                {products.map((card) => (
+                    <div key={card.id}>
+                        <Card
+                            setBgColor={setBgColor}
+                            cardData={card}
+                            bgColor={bgColor}/>
+                    </div>
+                ))}
+            </div>
+            <div className={"cartContentRowStyle"}>
+                <CartContent/>
+            </div>
         </div>
     );
 }
