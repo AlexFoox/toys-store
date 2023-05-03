@@ -18,14 +18,14 @@ const Card = (props: CardProps) => {
         console.log("str");
     }
 
+    const dispatch = useDispatch();
     const addToCart = () => {
         dispatch(addItem({id,cardName,count,price,inStoke: false}));
+
     }
-
     const {cardData, bgColor} = props;
-    const {id,cardName, price, inStoke} = cardData;
 
-    const dispatch = useDispatch();
+    const {id,cardName, price,amount, inStoke} = cardData;
 
     const handleIncrement = (cardName : string) => {
         setCount((count) => count + 1);
@@ -68,7 +68,7 @@ const isNameShimi : boolean = cardName === "PROD 1";
             <div className={"cardBottomStyle"}>
                 <h4> IN STOKE : {inStoke ? "YES" : "NO"}</h4>
                 {/*<div>NUMBER : {number}</div>*/}
-                <p> COUNT : {count}</p>
+                <p> Amount : {amount}</p>
                 <div className={"cardButtons"}>
                 <button id="increment" onClick={()=>handleIncrement(cardName)}>+</button>
                 <button id="decrement" onClick={handleDecrement}>-</button>

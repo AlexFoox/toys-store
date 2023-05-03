@@ -12,7 +12,6 @@ function Cart2() {
 
     console.log("@@@", items)
 
-    console.log(items)
     const removeItemFromCart = (id : number) => {
         dispatch(removeItem(id))
     }
